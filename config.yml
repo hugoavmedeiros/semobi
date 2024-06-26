@@ -1,0 +1,25 @@
+default:
+  status: "greenplum" # "greenplum" # "localhost""
+  app_name: "der_dados" #  Nome do App, é o mesmo usado para criar as credenciais
+  sepedatalake_greenplum:
+    driver: 'Postgres'
+    server: '10.238.107.182'
+    uid: 'sepe_adm'
+    pwd: '!sepe_adm!'
+    port: 5432
+    database: 'sepe'
+  sepedatalake_producao:
+    driver: 'Postgres'
+    server: '10.238.107.182'
+    uid: 'sepe_usr'
+    pwd: '!Sepe%Usr!'
+    port: 5432
+    database: 'sepe'
+  sepedatalake_localhost:
+    driver: 'Postgres'
+    server: 'localhost'
+    uid: 'sepe'
+    pwd: '@!sepe!@'
+    port: 7777
+    database: 'postgres'
+
